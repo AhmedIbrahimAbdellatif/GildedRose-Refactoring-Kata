@@ -1,12 +1,16 @@
-# Gilded Rose Refactoring Kata
+# Gilded Rose Refactoring Kata - Java Branch
 
 This Kata is a practice for handling a legacy code situation, and is also really useful for practicing writing good tests using different frameworks and approaches.
 
-## How I used this Kata
+## How I refactored this Kata
 
-I cloned the code and started improving the design after looking at the ["Gilded Rose Requirements"](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/GildedRoseRequirements.txt) which explains what the code is for. And I wrote tests to make sure I don't break the code while I refactor it incrementally.
+1. Read the [requirements text](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/GildedRoseRequirements.txt) to get an general idea about the exercise
+2. Wrote a test that covers the whole code and detects any changes in the code logic
+3. Started dividing the code into logic parts and extracted those parts into functions and ensured that the test still passed
+4. Identified that the usage of those functions can be redesigned by combining strategy and factory patterns
+5. Implemented a class using these patterns and ensured that the test still passed
 
-I added the following branches to practice doing this exercise different languages:
+*You can see the original code without refactoring on the [main branch](https://github.com/AhmedIbrahimAbdellatif/GildedRose-Refactoring-Kata/tree/main)*
 
-- [Java practice branch](https://github.com/AhmedIbrahimAbdellatif/GildedRose-Refactoring-Kata/tree/Java)
+***
 
