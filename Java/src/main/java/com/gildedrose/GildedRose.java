@@ -9,7 +9,7 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            item = new ConfigurableItem(item.name, item.sellIn, item.quality);
+            item.updateQuality();
         }
     }
 

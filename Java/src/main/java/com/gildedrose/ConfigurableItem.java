@@ -5,6 +5,9 @@ public class ConfigurableItem extends Item{
     public ConfigurableItem(String name, int sellIn, int quality) {
         super(name, sellIn, quality);
         itemBehavior = ItemBehaviorFactory.createItemBehavior(name);
+    }
+    @Override
+    public void updateQuality() {
         int[] itemParams = itemBehavior.updateQuality(sellIn, quality);
         super.sellIn = itemParams[ItemParamIndex.SELLIN_INDEX.getValue()];
         super.quality = itemParams[ItemParamIndex.QUALITY_INDEX.getValue()];
